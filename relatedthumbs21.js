@@ -14,7 +14,7 @@ try
 
 catch (error){
 s=entry.content.$t;a=s.indexOf("<img");b=s.indexOf("src=\"",a);c=s.indexOf("\"",b+5);d=s.substr(b+5,c-b-5);if((a!=-1)&&(b!=-1)&&(c!=-1)&&(d!="")){
-thumburl[relatedTitlesNum]=d;} else thumburl[relatedTitlesNum]='http://1.bp.blogspot.com/_u4gySN2ZgqE/SosvnavWq0I/AAAAAAAAArk/yL95WlyTqr0/s400/noimage.png';
+thumburl[relatedTitlesNum]=d;} else thumburl[relatedTitlesNum]='http://4.bp.blogspot.com/-Uj4mFIcvAUI/TjiuJ6TIBMI/AAAAAAAAChA/TQ9Ec_j_Qc0/s1600/related+post.png';
 
 
 
@@ -80,10 +80,10 @@ document.write('<div style="clear: both;"/>');
 while (i < relatedTitles.length && i < 20 && i<maxresults) {
 
 
-document.write('<a style="text-decoration:none;padding:5px;float:right;');
-if(i!=0) document.write('border-right:solid 0.5px #d4eaf2;"');
+document.write('<a style="text-decoration:none;padding:5px;float:left;');
+if(i!=0) document.write('border-left:solid 0.5px #595959;"');
 else document.write('"');
-document.write(' href="' + relatedUrls[r] + '"><img style="width:72px;height:72px;border:0px;" src="'+thumburl[r]+'"/><br/><div style="width:72px;padding-right:3px;height:65px;border: 0pt none ; margin: 3px 0pt 0pt; padding: 0pt; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">'+relatedTitles[r]+'</div></a>');
+document.write(' href="' + relatedUrls[r] + '"><img style="width:100px;height:100px;border:0px;" src="'+thumburl[r]+'"/><br/><div style="width:100px;padding-left:3px;height:65px;border: 0pt none ; margin: 3px 0pt 0pt; padding: 0pt; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">'+relatedTitles[r]+'</div></a>');
 
 
 if (r < relatedTitles.length - 1) {
